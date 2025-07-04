@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#" id="students">STUDENTS</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1 id="h1">Student's Data</h1>
+    </header>
+
+    <main id="main">
+      <button onclick="openForm()">Add Student</button>
+      <div id="studentList"></div>
+    </main>
+
+    <div id="overlay" class="overlay" style="display: none">
+      <div class="form-container">
+        <form id="studentForm" onsubmit="addStudent(event)">
+          <h2>Add Student</h2>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <input
+            id="Fname"
+            name="father_name"
+            type="text"
+            placeholder="Father's Name"
+            required
+          />
+          <input
+            id="className"
+            name="class"
+            type="text"
+            placeholder="Class"
+            required
+          />
+
+          <label for="photoUpload" class="upload-btn">Upload Pic</label>
+          <input
+            type="file"
+            id="photoUpload"
+            name="photo"
+            accept="image/*"
+            style="display: none"
+            required
+          />
+          <span
+            id="fileName"
+            style="display: block; margin-bottom: 10px; font-size: 14px"
+          ></span>
+
+          <div class="form-buttons">
+            <button id="saveBtn" type="submit">Save</button>
+            <button type="button" onclick="closeForm()">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="studentListPage"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
