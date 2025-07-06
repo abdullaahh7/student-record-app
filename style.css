@@ -196,3 +196,41 @@ p {
     justify-content: flex-start;
   }
 }
+
+#showMoreOverlay input,
+#showMoreOverlay textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#showMoreOverlay input:focus,
+#showMoreOverlay textarea:focus {
+  border-color: #6200ea;
+  box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+}
+
+#showMoreOverlay textarea {
+  resize: vertical;
+}
+
+.student-info {
+  background-color: #f3f3f3;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.student-info strong {
+  color: #6200ea;
+  margin-right: 5px;
+}
