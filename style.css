@@ -244,3 +244,7 @@ p {
     justify-content: flex-start;
   }
 }
+
+.content-box {
+  height: 102%;
+}
