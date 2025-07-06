@@ -43,7 +43,7 @@ header h1 {
 /* === Buttons === */
 button {
   display: block;
-  margin: 20px auto;
+  margin: 0px auto;
   padding: 12px 20px;
   font-size: 16px;
   background-color: #03dac6;
@@ -243,8 +243,4 @@ p {
     width: 100%;
     justify-content: flex-start;
   }
-}
-
-.content-box {
-  height: 102%;
 }
