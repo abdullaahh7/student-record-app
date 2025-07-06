@@ -40,7 +40,6 @@ header h1 {
   color: #1a1a1a;
 }
 
-/* === Buttons === */
 button {
   display: block;
   margin: 0px auto;
@@ -59,7 +58,6 @@ button:hover {
   background-color: #00bfa5;
 }
 
-/* === Overlay === */
 .overlay {
   position: fixed;
   top: 0;
@@ -74,7 +72,6 @@ button:hover {
   z-index: 1000;
 }
 
-/* === Form Container === */
 .form-container {
   background: #fff;
   padding: 30px;
@@ -115,7 +112,6 @@ button:hover {
   background-color: #3700b3;
 }
 
-/* === Upload Button === */
 .upload-btn {
   display: inline-block;
   width: 100%;
@@ -129,7 +125,6 @@ button:hover {
   margin-bottom: 15px;
 }
 
-/* === Form Buttons Group === */
 .form-buttons {
   display: flex;
   gap: 10px;
@@ -159,7 +154,6 @@ button:hover {
   color: #333;
 }
 
-/* === Student List Page === */
 #studentListPage {
   display: none;
   padding: 20px;
@@ -172,17 +166,14 @@ button:hover {
   color: #333;
 }
 
-/* === Paragraphs === */
 p {
   color: #333;
 }
 
-/* === Clear Button Fix === */
 #clearAllBtn {
   margin: 0 !important;
 }
 
-/* === Show More Overlay === */
 #showMoreOverlay input,
 #showMoreOverlay textarea {
   width: 100%;
@@ -211,7 +202,6 @@ p {
   scroll-behavior: smooth;
 }
 
-/* === Student Info Box === */
 .student-info {
   background-color: #f3f3f3;
   padding: 8px 12px;
@@ -226,7 +216,6 @@ p {
   margin-right: 5px;
 }
 
-/* === Responsive === */
 @media screen and (max-width: 640px) {
   #headDiv {
     flex-direction: column;
