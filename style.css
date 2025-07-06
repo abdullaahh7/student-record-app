@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* === Reset & Base Styles === */
 * {
   margin: 0;
   padding: 0;
@@ -11,17 +11,17 @@ body {
   color: #212121;
 }
 
-/* Navbar */
+/* === Navbar === */
 nav ul {
   display: flex;
   list-style: none;
-  background: #6200ea; /* Deep purple */
-  padding: 20px 0px 20px 20px;
+  background-color: #6200ea;
+  padding: 20px 0 20px 20px;
   gap: 30px;
 }
 
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -29,10 +29,10 @@ nav a {
 }
 
 nav a:hover {
-  color: #bb86fc; /* Lighter purple */
+  color: #bb86fc;
 }
 
-/* Heading */
+/* === Header === */
 header h1 {
   text-align: center;
   font-size: 48px;
@@ -40,26 +40,26 @@ header h1 {
   color: #1a1a1a;
 }
 
-/* Buttons */
+/* === Buttons === */
 button {
   display: block;
   margin: 20px auto;
   padding: 12px 20px;
   font-size: 16px;
-  background-color: #03dac6; /* Teal */
+  background-color: #03dac6;
   color: #000;
   border: none;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #00bfa5;
 }
 
-/* Overlay */
+/* === Overlay === */
 .overlay {
   position: fixed;
   top: 0;
@@ -74,9 +74,9 @@ button:hover {
   z-index: 1000;
 }
 
-/* Form Container */
+/* === Form Container === */
 .form-container {
-  background: white;
+  background: #fff;
   padding: 30px;
   border-radius: 12px;
   width: 320px;
@@ -91,7 +91,6 @@ button:hover {
 }
 
 .form-container input {
-  display: block;
   width: 100%;
   margin-bottom: 15px;
   padding: 12px;
@@ -104,32 +103,33 @@ button:hover {
   width: 100%;
   padding: 12px;
   background-color: #6200ea;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
 .form-container button:hover {
   background-color: #3700b3;
 }
 
-/* Upload button */
+/* === Upload Button === */
 .upload-btn {
   display: inline-block;
+  width: 100%;
   padding: 10px;
   background-color: #6200ea;
-  color: white;
+  color: #fff;
   text-align: center;
   cursor: pointer;
   border-radius: 6px;
   font-size: 16px;
   margin-bottom: 15px;
-  width: 100%;
 }
 
-/* Form buttons */
+/* === Form Buttons Group === */
 .form-buttons {
   display: flex;
   gap: 10px;
@@ -159,6 +159,7 @@ button:hover {
   color: #333;
 }
 
+/* === Student List Page === */
 #studentListPage {
   display: none;
   padding: 20px;
@@ -171,14 +172,61 @@ button:hover {
   color: #333;
 }
 
+/* === Paragraphs === */
 p {
   color: #333;
 }
 
+/* === Clear Button Fix === */
 #clearAllBtn {
   margin: 0 !important;
 }
 
+/* === Show More Overlay === */
+#showMoreOverlay input,
+#showMoreOverlay textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#showMoreOverlay input:focus,
+#showMoreOverlay textarea:focus {
+  border-color: #6200ea;
+  box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+}
+
+#showMoreOverlay textarea {
+  resize: vertical;
+}
+
+#showMoreOverlay {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* === Student Info Box === */
+.student-info {
+  background-color: #f3f3f3;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.student-info strong {
+  color: #6200ea;
+  margin-right: 5px;
+}
+
+/* === Responsive === */
 @media screen and (max-width: 640px) {
   #headDiv {
     flex-direction: column;
@@ -195,47 +243,4 @@ p {
     width: 100%;
     justify-content: flex-start;
   }
-}
-
-#showMoreOverlay input,
-#showMoreOverlay textarea {
-  width: 100%;
-  padding: 8px 12px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  box-sizing: border-box;
-  outline: none;
-  transition: border-color 0.3s;
-}
-
-#showMoreOverlay input:focus,
-#showMoreOverlay textarea:focus {
-  border-color: #6200ea;
-  box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
-}
-
-#showMoreOverlay textarea {
-  resize: vertical;
-}
-
-.student-info {
-  background-color: #f3f3f3;
-  padding: 8px 12px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #333;
-}
-
-.student-info strong {
-  color: #6200ea;
-  margin-right: 5px;
-}
-
-#showMoreOverlay {
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
 }
